@@ -1,3 +1,3 @@
-![Intro](./docs/artemis.jpg)
+![Intro](./docs/artemis.png)
 
 Documentation &amp; Public Image Web Content Repository
