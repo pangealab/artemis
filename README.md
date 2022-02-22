@@ -1,3 +1,3 @@
-![Intro](./docs/artemis.jif)
+![Intro](./docs/artemis.gif)
 
 Documentation &amp; Public Image Web Content Repository
