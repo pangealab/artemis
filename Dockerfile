@@ -1,7 +1,10 @@
+# Jekyll Version (e.g. 3.8.6)
 ARG JEKYLL_VERSION
 
+# Base Image
 FROM jekyll/jekyll:$JEKYLL_VERSION
 
+# Arguments
 ARG IMAGE_CREATE_DATE
 ARG IMAGE_VERSION
 ARG IMAGE_SOURCE_REVISION
@@ -19,11 +22,18 @@ LABEL org.opencontainers.image.title="Artemis" \
       org.opencontainers.image.source="https://srolab@dev.azure.com/srolab/artemis/_git/artemis" \
       org.opencontainers.image.revision=$IMAGE_SOURCE_REVISION
 
+# Volume(s)
 VOLUME /srv
+
+# Port(s)
 EXPOSE 4000
 
+# Copy Site
 ADD . /srv/jekyll
 
+# Workdir
 WORKDIR /srv/jekyll
 
-ENTRYPOINT ["jekyll", "serve", "--livereload", "-H", "0.0.0.0"]
+# Startup
+# ENTRYPOINT ["jekyll", "serve", "--livereload", "-H", "0.0.0.0"]
+CMD ["jekyll", "serve", "--livereload", "-H", "0.0.0.0"]
