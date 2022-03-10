@@ -1,6 +1,6 @@
 ![Intro](./docs/artemis.gif)
 
-Reference Architecture Doc Site with Jekyll & Pandoc docgen
+ServiceNow Archetypes with Jekyll & Pandoc docgen
 
 # Document Generation Documentation
 
