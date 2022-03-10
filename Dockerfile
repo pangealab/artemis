@@ -1,14 +1,10 @@
-FROM jekyll/builder
-
-WORKDIR /tmp
-ADD Gemfile /tmp/
-ADD Gemfile.lock /tmp/
-RUN bundle install
-
 FROM jekyll/jekyll:3.8.6
 
-VOLUME /src
+VOLUME /srv
 EXPOSE 4000
 
-WORKDIR /src
-ENTRYPOINT ["jekyll", "serve", "--livereload", "-H", "0.0.0.0"]
+ADD . /srv/jekyll
+
+WORKDIR /srv/jekyll
+
+ENTRYPOINT ["jekyll", "serve", "--livereload", "-H", "127.0.0.1"]
