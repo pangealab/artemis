@@ -1,4 +1,4 @@
-repository: https://srolab@dev.azure.com/srolab/artemis/_git/artemis
+repository: srolab/artemis
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
