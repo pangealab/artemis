@@ -26,11 +26,10 @@ stages:
              inputs:
                connectionType: 'Kubernetes Service Connection'
                kubernetesServiceConnection: 'olympus'
-               chartName: 'artemis'
-               releaseName: 'artemis'
-               chartType: FilePath
-               chartPath: helm
+               namespace: '$(serviceNamespace)'
                command: 'upgrade'
+               chartType: 'FilePath'
+               chartPath: 'helm'
+               releaseName: 'artemis'
                force: true
-               namespace: $(serviceNamespace)
-               arguments: --set imageRepo=$(repoPrefix)
+               arguments: '--set imageRepo=$(repoPrefix)'
