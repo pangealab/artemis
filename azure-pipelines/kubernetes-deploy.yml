@@ -29,6 +29,8 @@ stages:
           inputs:
             connectionType: 'Kubernetes Service Connection'
             kubernetesServiceEndpoint: 'olympus'
-            namespace: $(serviceNamespace)
+            namespace: '$(serviceNamespace)'
             command: 'apply'
             arguments: '-f kubernetes-manifests/$(serviceName).yaml'
+            secretType: 'dockerRegistry'
+            containerRegistryType: 'Azure Container Registry'
