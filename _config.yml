@@ -9,7 +9,7 @@ topnav_title: ServiceNow
 site_title: ServiceNow Archetypes
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: ServiceNow.
+company_name: ServiceNow
 # this appears in the footer
 
 # github_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
