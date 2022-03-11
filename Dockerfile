@@ -36,4 +36,4 @@ WORKDIR /srv/jekyll
 
 # Startup
 # ENTRYPOINT ["jekyll", "serve", "--livereload", "-H", "0.0.0.0"]
-CMD ["jekyll", "serve", "--livereload", "-H", "0.0.0.0"]
+CMD ["jekyll", "serve", "-H", "0.0.0.0"]
