@@ -10,7 +10,7 @@ variables:
 
   ### Variables ###
   serviceNamespace: $(SERVICE_NAMESPACE)
-  serviceName: $(SERVICE_NAME)
+  serviceName: artemis
 
 pool:
   vmImage: ubuntu-latest
