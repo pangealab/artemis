@@ -51,14 +51,13 @@ stages:
   - stage: Delete_App
     jobs:
       - job: Delete_App
-        steps:
-           - task: HelmDeploy@0 
-             inputs:
-               connectionType: 'Kubernetes Service Connection'
-               kubernetesServiceConnection: 'olympus'
-               namespace: '$(serviceNamespace)'
-               command: 'delete'
-               releaseName: 'artemis'
+      - task: HelmDeploy@0
+        inputs:
+          connectionType: 'Kubernetes Service Connection'
+          kubernetesServiceConnection: 'olympus'
+          namespace: '$(serviceNamespace)'
+          command: 'uninstall'
+          arguments: 'artemis'
 
   #### Install App ####
   # - stage: Install_App
