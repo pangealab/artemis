@@ -61,5 +61,4 @@ stages:
                chartType: 'FilePath'
                chartPath: 'helm'
                releaseName: 'artemis'
-               force: true
-               arguments: '--install --set imageRepo=$(repoPrefix)'          
+               arguments: '--set imageRepo=$(repoPrefix)'  
