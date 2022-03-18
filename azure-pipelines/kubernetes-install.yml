@@ -57,9 +57,9 @@ stages:
                connectionType: 'Kubernetes Service Connection'
                kubernetesServiceConnection: 'olympus'
                namespace: '$(serviceNamespace)'
-               command: 'install'
+               command: 'upgrade'
                chartType: 'FilePath'
                chartPath: 'helm'
                releaseName: 'artemis'
                force: true
-               arguments: '--set imageRepo=$(repoPrefix)'          
+               arguments: '--install --set imageRepo=$(repoPrefix)'          
