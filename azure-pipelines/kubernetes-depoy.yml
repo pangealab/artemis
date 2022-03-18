@@ -58,6 +58,7 @@ stages:
                kubernetesServiceConnection: 'olympus'
                namespace: '$(serviceNamespace)'
                command: 'delete'
+               releaseName: 'artemis'
 
   #### Install App ####
   # - stage: Install_App
