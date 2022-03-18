@@ -61,5 +61,5 @@ stages:
                chartType: 'FilePath'
                chartPath: 'helm'
                releaseName: 'artemis'
-               force: true
+               recreate: true
                arguments: '--set imageRepo=$(repoPrefix)'
