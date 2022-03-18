@@ -1,0 +1,78 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- none
+
+variables:
+
+  ### Variables ###
+  jekyllVersion: '$(JEKYLL_VERSION)'
+  serviceNamespace: $(SERVICE_NAMESPACE)
+  repoUserName: '$(REPO_USERNAME)'
+  repoPAT: '$(REPO_PAT)'
+  repoPrefix: '$(REPO_PREFIX)'
+  serviceName: artemis
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+
+  #### Build Image Stage ####
+  - stage: Build_App
+    jobs:
+      - job: Build_App
+        steps:
+        - bash: |
+            set -x # Echo Commands
+            # Docker Login
+            echo $(repoPAT) | docker login --username $(repoUserName) --password-stdin        
+            # Build Image
+            export JEKYLL_VERSION=$(jekyllVersion)
+            export REPO_PREFIX=$(repoPrefix)
+            export TAG=latest
+            export IMAGE_CREATE_DATE="`date -u +"%Y-%m-%dT%H:%M:%SZ"`"
+            export IMAGE_VERSION="1.0.0"
+            export IMAGE_SOURCE_REVISION="`git rev-parse HEAD`"
+            export IMAGE=$(repoPrefix)/$(serviceName):$TAG
+            # Build Image   
+            docker build \
+            --build-arg JEKYLL_VERSION=$JEKYLL_VERSION \
+            --build-arg IMAGE_CREATE_DATE=$IMAGE_CREATE_DATE \
+            --build-arg IMAGE_VERSION=$IMAGE_VERSION \
+            --build-arg IMAGE_SOURCE_REVISION=$IMAGE_SOURCE_REVISION \
+            -f Dockerfile -t $IMAGE . && docker push $IMAGE   
+          displayName: 'Building $(serviceName) Image...'
+
+  #### Uninstall App ####
+  - stage: Uninstall_App
+    jobs:
+      - job: Uninstall_App
+        steps:
+        - task: HelmDeploy@0
+          inputs:
+            connectionType: 'Kubernetes Service Connection'
+            kubernetesServiceConnection: 'olympus'
+            namespace: '$(serviceNamespace)'
+            command: 'uninstall'
+            arguments: 'artemis'
+
+  #### Install App ####
+  - stage: Install_App
+    jobs:
+      - job: Install_App
+        steps:
+           - task: HelmDeploy@0 
+             inputs:
+               connectionType: 'Kubernetes Service Connection'
+               kubernetesServiceConnection: 'olympus'
+               namespace: '$(serviceNamespace)'
+               command: 'install'
+               chartType: 'FilePath'
+               chartPath: 'helm'
+               releaseName: 'artemis'
+               force: true
+               arguments: '--set imageRepo=$(repoPrefix)'          
