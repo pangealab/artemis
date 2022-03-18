@@ -7,6 +7,6 @@ permalink: index.html
 summary: These brief instructions will help you get started quickly with the ServiceNow Cloud Native Reference Architectures.
 ---
 
-A Reference Architecture is a document or set of documents that provides recommended structures and integrations of IT products and services to form a Solution. Here you can find Architecture Diagrams, Documents and Code you can follow at your own pace and deploy in your enviroment.
+A Reference Architecture is a document or set of documents that provides recommended structures and integrations of IT products and services to form a Solution. Here you can find Architecture Diagrams, Documents and Code you can follow at your own pace and deploy in your enviroment. Just browse through the catalog on the left or search for topics of interest.
 
 {% include links.html %}
