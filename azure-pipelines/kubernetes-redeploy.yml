@@ -18,9 +18,9 @@ pool:
 stages:
 
   #### Build Image Stage ####
-  - stage: Redeploy_Image
+  - stage: Redeploy_App
     jobs:
-      - job: Redeploy_Image
+      - job: Redeploy_App
         steps:
         - task: KubernetesManifest@0
           displayName: Patch
