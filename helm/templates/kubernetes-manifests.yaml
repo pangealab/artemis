@@ -30,6 +30,7 @@ spec:
         app: artemis
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
+        deploymentTime: {{ now }}
     spec:
       serviceAccountName: default
       containers:
