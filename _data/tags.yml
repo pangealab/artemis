@@ -13,5 +13,10 @@ allowed-tags:
   - news
   - troubleshooting
   - mobile
+  - microservice_visibility
+  - predict_prevent
+  - modern_incident
+  - measure_resilience
+  - automate_change
 
 # Copyright 2021 Google LLC
