@@ -1,6 +1,6 @@
 ---
 title: Predict & Prevent Incidents
-tags: [predic_prevent]
+tags: [predict_prevent]
 keywords: predict prevent incidents
 last_updated: March 24, 2022
 summary: "Predict & Prevent Incidents"
