@@ -5,7 +5,7 @@ keywords:
 summary: "Modern Cloud Native Cases showcasing ServiceNow relevancy. Leverage latest NOW capabilities in a realistic and live environment familiar to distributed DevOps/SRE teams and bridge the gap between them and the centralized platform owner teams."
 sidebar: mydoc_sidebar
 permalink: mydoc_devops_change_config.html
-folder: mydoc
+folder: artemis
 ---
 
 ## About Ruby

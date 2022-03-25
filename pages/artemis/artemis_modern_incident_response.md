@@ -6,7 +6,7 @@ last_updated: March 24, 2022
 summary: "Modern Incident Response"
 sidebar: mydoc_sidebar
 permalink: mydoc_modern_incident_response.html
-folder: mydoc
+folder: artemis
 ---
 
 {% include links.html %}

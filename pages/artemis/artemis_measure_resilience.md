@@ -6,7 +6,7 @@ last_updated: March 24, 2022
 summary: "Measure Service Resilience"
 sidebar: mydoc_sidebar
 permalink: mydoc_measure_resilience.html
-folder: mydoc
+folder: artemis
 ---
 
 {% include links.html %}

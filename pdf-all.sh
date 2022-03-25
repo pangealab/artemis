@@ -1,1 +1,1 @@
-. pdf-mydoc.sh; . pdf-product1.sh; .  pdf-product2.sh;
+. pdf-artemis.sh; . pdf-product1.sh; .  pdf-product2.sh;

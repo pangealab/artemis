@@ -2,7 +2,7 @@
 title: "Getting started with ServiceNow Cloud Native Service Operations"
 keywords: homepage
 tags: [getting_started]
-sidebar: mydoc_sidebar
+sidebar: artemis_sidebar
 permalink: index.html
 summary: These brief instructions will help you get started quickly with ServiceNow Cloud Native Service Operations.
 ---
