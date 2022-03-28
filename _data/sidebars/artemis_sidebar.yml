@@ -33,7 +33,7 @@ entries:
     folderitems:
 
     - title: 1.0 Release Notes
-      url: /artemis_release_notes_10.html
+      url: /release_notes_10.html
       output: web, pdf
 
   - title: Use Cases
@@ -41,23 +41,23 @@ entries:
     folderitems:
 
     - title: Automate Change Management
-      url: /artemis_automate_change.html
+      url: /automate_change.html
       output: web, pdf
 
     - title: Microservice Visibility
-      url: /artemis_microservice_visibility.html
+      url: /microservice_visibility.html
       output: web, pdf
 
     - title: Measure Service Resilience
-      url: /artemis_measure_resilience.html
+      url: /measure_resilience.html
       output: web, pdf
       
     - title: Predict & Prevent Incidents
-      url: /artemis_predict_prevent_incidents.html
+      url: /predict_prevent_incidents.html
       output: web, pdf
 
     - title: Modern Incident Response
-      url: /artemis_modern_incident_response.html
+      url: /modern_incident_response.html
       output: web, pdf      
 
 # Copyright 2021 Google LLC

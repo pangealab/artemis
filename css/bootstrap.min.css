@@ -255,7 +255,9 @@ th {
     a[href^="#"]:after {
         content: ""
     }
-    blockquote,
+    blockquote {
+        font-size: 12px;
+    }
     pre {
         border: 1px solid #999;
         page-break-inside: avoid
