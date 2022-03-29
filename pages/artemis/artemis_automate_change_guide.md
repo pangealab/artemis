@@ -18,3 +18,5 @@ folder: artemis
 {% include pages/install_azure_cli_with_wsl.md %}
 
 {% include pages/install_aks_with_azure_cli.md %}
+
+{% include pages/configure_kubectl_for_aks.md %}
