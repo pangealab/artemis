@@ -44,13 +44,24 @@ entries:
       url: /artemis_automate_change_overview.html
     - title: Guide
       output: web
-      url: /artemis_automate_change_guide.html      
+      url: /artemis_automate_change_guide.html
+
+  - title: Microservice Visibility
+    output: web, pdf
+    url:
       
-    # - title: Microservice Visibility
-    #   output: web
-    # - title: Measure Service Resilience
-    #   output: web
-    # - title: Predict & Prevent Incidents
-    #   output: web
-    # - title: Modern Incident Response
-    #   output: web
+  - title: Microservice Visibility
+    output: web, pdf
+    url:
+
+  - title: Measure Service Resilience
+    output: web, pdf
+    url:
+
+  - title: Predict & Prevent Incidents
+    output: web, pdf
+    url:
+
+  - title: Modern Incident Response
+    output: web, pdf
+    url:
