@@ -20,3 +20,8 @@ folder: artemis
 {% include pages/install_aks_with_azure_cli.md %}
 
 {% include pages/configure_kubectl_for_aks.md %}
+
+{% include pages/install_sn_devops_change.md %}
+
+{% include pages/install_sn_devops_config.md %}
+

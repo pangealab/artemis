@@ -32,6 +32,9 @@ Bridge the gap between distributed DevOps/SRE teams and centralized ServiceNow p
 * [GitHub Source Control](https://github.com) Leading source code hosting platform for version control and collaboration.
 * [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) Microsoft Azure Pipelines used to continuously build, test, and deploy to any platform and cloud.
 * [Docker Hub](https://hub.docker.com) Leading Docker Public Registry for finding and sharing container images with distributed teams.
+* [Azure Kubernetes](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes) Microsoft Azure mananaged Kubernetes cluster for cloud native workloads.
+* [ServiceNow DevOps Change Velocity]({{site.data.urls.devops_change_velocity}}) ServiceNow code Change Automation.
+* [ServiceNow DevOps Config]({{site.data.urls.devops_change_velocity}}) ServiceNow config Change Automation.
 
 # Next Steps
 
