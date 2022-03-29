@@ -11,13 +11,6 @@ folder: artemis
 
 Bridge the gap between distributed DevOps/SRE teams and centralized ServiceNow platform owner teams by automatically generating Change Requests. Utilize data from your existing CI/CD tools against sophisticated change policies to accelerate your pipeline.
 
-# Components
-
-* [Azure DevOps Boards](https://azure.microsoft.com/en-us/services/devops/boards/) Microsoft Azure backlog tracking tool for distributed teams.
-* [GitHub Source Control](https://github.com) Leading source code hosting platform for version control and collaboration.
-* [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) Microsoft Azure Pipelines used to continuously build, test, and deploy to any platform and cloud.
-* [Docker Hub](https://hub.docker.com) Leading Docker Public Registry for finding and sharing container images with distributed teams.
-
 # Dataflow
 
 ![Dataflow](images/automate_change_dataflow.png)
@@ -32,5 +25,16 @@ Bridge the gap between distributed DevOps/SRE teams and centralized ServiceNow p
 1. The `ADO Pipeline` pauses, and a Change Request is *automatically generated* in ServiceNow for approval.
 1. The `Change Request` is reviewed in ServiceNow and approved after reviewing all the changes.
 1. The `ADO Pipline` is released and the Docker image is deployed to the `Azure Kubernetes` environment
+
+# Components
+
+* [Azure DevOps Boards](https://azure.microsoft.com/en-us/services/devops/boards/) Microsoft Azure backlog tracking tool for distributed teams.
+* [GitHub Source Control](https://github.com) Leading source code hosting platform for version control and collaboration.
+* [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) Microsoft Azure Pipelines used to continuously build, test, and deploy to any platform and cloud.
+* [Docker Hub](https://hub.docker.com) Leading Docker Public Registry for finding and sharing container images with distributed teams.
+
+# Next Steps
+
+* Follow the [Guide](artemis_automate_change_guide.md) to implement in your environment.
 
 {% include links.html %}
