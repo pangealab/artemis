@@ -1,4 +1,4 @@
-### Create your SSH Key
+### Create SSH Key
 
 SSH (Secure Shell) keys are an access credential that is used in the SSH protocol and they are foundational to modern Infrastructure-as-a-Service platforms such as AWS, Google Cloud, and Azure. Procedure is as follows:
 
