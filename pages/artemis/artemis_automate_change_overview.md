@@ -1,19 +1,26 @@
 ---
-title: Automate Change Management
+title: Automate Change Overview
 tags: [automate_change]
 keywords: automate change
 last_updated: March 24, 2022
-summary: "Automate Change Management"
+summary: "Automate Change"
 sidebar: artemis_sidebar
-permalink: automate_change.html
+permalink: artemis_automate_change_overview.html
 folder: artemis
 ---
 
 Bridge the gap between distributed DevOps/SRE teams and centralized ServiceNow platform owner teams by automatically generating Change Requests. Utilize data from your existing CI/CD tools against sophisticated change policies to accelerate your pipeline.
 
+# Components
+
+* [Azure DevOps Boards](https://azure.microsoft.com/en-us/services/devops/boards/) Microsoft Azure backlog tracking tool for distributed teams.
+* [GitHub Source Control](https://github.com) Leading source code hosting platform for version control and collaboration.
+* [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) Microsoft Azure Pipelines used to continuously build, test, and deploy to any platform and cloud.
+* [Docker Hub](https://hub.docker.com) Leading Docker Public Registry for finding and sharing container images with distributed teams.
+
 # Dataflow
 
-![Dataflow](automate_change_dataflow.png)
+![Dataflow](images/automate_change_dataflow.png)
 
 1. Create a *Work Item* in `Azure Boards` and note the *Work Item ID* (e.g. AB#14) and assign the item to a developer.
 1. Make your *code* and *configuration changes* and commit your changes to `GitHub`.
@@ -24,6 +31,6 @@ Bridge the gap between distributed DevOps/SRE teams and centralized ServiceNow p
 1. Service is built and the Docker image is published to `Docker Hub` ready for final deployment.
 1. The `ADO Pipeline` pauses, and a Change Request is *automatically generated* in ServiceNow for approval.
 1. The `Change Request` is reviewed in ServiceNow and approved after reviewing all the changes.
-1. The `ADO Pipline` is released and the Docker image is deployed to the `Azure Kubernetes` environment 
+1. The `ADO Pipline` is released and the Docker image is deployed to the `Azure Kubernetes` environment
 
 {% include links.html %}

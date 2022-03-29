@@ -5,7 +5,7 @@ keywords: microservice visobility
 last_updated: March 24, 2022
 summary: "Microservice Visibility"
 sidebar: artemis_sidebar
-permalink: microservice_visibility.html
+permalink: artemis_microservice_visibility.html
 folder: artemis
 ---
 

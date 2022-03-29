@@ -20,12 +20,12 @@ entries:
       type: frontmatter
 
   - title: Overview
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: Get Started
       url: /index.html
-      output: web, pdf
+      output: web
       type: homepage
 
   - title: Release Notes
@@ -33,31 +33,24 @@ entries:
     folderitems:
 
     - title: 1.0 Release Notes
-      url: /release_notes_10.html
+      url: /artemis_release_notes_10.html
       output: web, pdf
 
-  - title: Use Cases
+  - title: Automate Change
     output: web, pdf
     folderitems:
-
-    - title: Automate Change Management
-      url: /automate_change.html
-      output: web, pdf
-
-    - title: Microservice Visibility
-      url: /microservice_visibility.html
-      output: web, pdf
-
-    - title: Measure Service Resilience
-      url: /measure_resilience.html
-      output: web, pdf
+    - title: Overview
+      output: web
+      url: /artemis_automate_change_overview.html
+    - title: Guide
+      output: web
+      url: /artemis_automate_change_guide.html      
       
-    - title: Predict & Prevent Incidents
-      url: /predict_prevent_incidents.html
-      output: web, pdf
-
-    - title: Modern Incident Response
-      url: /modern_incident_response.html
-      output: web, pdf      
-
-# Copyright 2021 Google LLC
+    # - title: Microservice Visibility
+    #   output: web
+    # - title: Measure Service Resilience
+    #   output: web
+    # - title: Predict & Prevent Incidents
+    #   output: web
+    # - title: Modern Incident Response
+    #   output: web
