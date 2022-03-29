@@ -45,23 +45,35 @@ entries:
     - title: Guide
       output: web
       url: /artemis_automate_change_guide.html
-
+     
   - title: Microservice Visibility
     output: web, pdf
-    url:
-      
-  - title: Microservice Visibility
-    output: web, pdf
-    url:
+  #   folderitems:
+  #   - title: Overview
+  #     output: web
+  #   - title: Guide
+  #     output: web
 
   - title: Measure Service Resilience
     output: web, pdf
-    url:
+  #   folderitems:
+  #   - title: Overview
+  #     output: web
+  #   - title: Guide
+  #     output: web
 
   - title: Predict & Prevent Incidents
     output: web, pdf
-    url:
+  #   folderitems:
+  #   - title: Overview
+  #     output: web
+  #   - title: Guide
+  #     output: web
 
   - title: Modern Incident Response
     output: web, pdf
-    url:
+  #   folderitems:
+  #   - title: Overview
+  #     output: web
+  #   - title: Guide
+  #     output: web
