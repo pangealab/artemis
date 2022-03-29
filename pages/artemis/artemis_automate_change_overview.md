@@ -28,13 +28,15 @@ Bridge the gap between distributed DevOps/SRE teams and centralized ServiceNow p
 
 # Components
 
-* [Azure DevOps Boards](https://azure.microsoft.com/en-us/services/devops/boards/) Microsoft Azure backlog tracking tool for distributed teams.
-* [GitHub Source Control](https://github.com) Leading source code hosting platform for version control and collaboration.
-* [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) Microsoft Azure Pipelines used to continuously build, test, and deploy to any platform and cloud.
-* [Docker Hub](https://hub.docker.com) Leading Docker Public Registry for finding and sharing container images with distributed teams.
-* [Azure Kubernetes](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes) Microsoft Azure mananaged Kubernetes cluster for cloud native workloads.
-* [ServiceNow DevOps Change Velocity]({{site.data.urls.devops_change_velocity}}) ServiceNow code Change Automation.
-* [ServiceNow DevOps Config]({{site.data.urls.devops_change_velocity}}) ServiceNow config Change Automation.
+| Component | Description |
+|-----------|-------------|
+| [Azure DevOps Boards](https://azure.microsoft.com/en-us/services/devops/boards/) | Microsoft Azure Backlog tracking tool for your distributed teams.|
+| [GitHub Source Control](https://github.com) | Leading Source Code hosting platform for Version Control & Collaboration for your distributed teams.|
+| [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) | Microsoft Azure Pipelines used to continuously Build, Test, and Deploy to any Platform and Cloud.|
+| [Docker Hub](https://hub.docker.com) | Leading Docker Public Registry for finding and sharing Docker Container iImages with your distributed teams.|
+|[ServiceNow DevOps Change Velocity]({{site.data.urls.devops_change_velocity}}) | ServiceNow Change Automation for your Cloud Native Source code.|
+| [ServiceNow DevOps Config]({{site.data.urls.devops_change_config}}) | ServiceNow Change Automation for your Cloud Native Configurations & Properties.|
+| [Azure Kubernetes](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes) | Microsoft Azure mananaged Kubernetes Cluster for your Cloud Native Workloads.|
 
 # Next Steps
 
