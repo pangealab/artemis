@@ -1,6 +1,6 @@
-## Install the Azure CLI for WSL Ubuntu
+### Install the Azure Kubernetes with Azure CLI
 
-1. Get an [Azure Account](https://azure.microsoft.com)
+Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster in Azure by offloading the operational overhead to Azure. As a hosted Kubernetes service, Azure handles critical tasks, like health monitoring and maintenance. Installation is as follows:
 
 1. Start a Bash Shell
 

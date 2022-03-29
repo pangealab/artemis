@@ -9,4 +9,10 @@ permalink: artemis_automate_change_guide.html
 folder: artemis
 ---
 
-{% include pages/wsl_install_azure_cli.md %}
+## Prerequisites
+
+{% include pages/install_wsl_for_windows.md %}
+
+{% include pages/create_ssh_key.md %}
+
+{% include pages/install_azure_cli_with_wsl.md %}
