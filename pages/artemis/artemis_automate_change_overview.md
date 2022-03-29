@@ -35,6 +35,6 @@ Bridge the gap between distributed DevOps/SRE teams and centralized ServiceNow p
 
 # Next Steps
 
-* Follow the [Guide](artemis_automate_change_guide.md) to implement in your environment.
+* Follow the [Guide](./artemis_automate_change_guide.md) to implement in your environment.
 
 {% include links.html %}
