@@ -1,6 +1,6 @@
 ### Install ServiceNow DevOps Change Velocity
 
-ServiceNow DevOps Change Velocity helps Cloud Native Teams define Change Approval policies for *code* changes and preventing high risk changes to deployment environments. Leverage your toolchain data in approvals to completely automate the change approval process.
+ServiceNow DevOps Change Velocity helps Cloud Native Teams define Change Approval policies for *code* changes and preventing high risk changes to deployment environments. Leverage your toolchain data in approvals to completely automate the change approval process. Installation is as follows:
 
 1. Login to your NOW Instance as Administrator
 

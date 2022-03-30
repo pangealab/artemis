@@ -48,11 +48,13 @@ entries:
      
   - title: Microservice Visibility
     output: web, pdf
-  #   folderitems:
-  #   - title: Overview
-  #     output: web
-  #   - title: Guide
-  #     output: web
+    folderitems:
+    - title: Overview
+      output: web
+      url: /artemis_microservice_viz_overview.html
+    - title: Guide
+      output: web
+      url: /artemis_microservice_viz_guide.html
 
   - title: Measure Service Resilience
     output: web, pdf

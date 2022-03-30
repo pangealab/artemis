@@ -1,11 +1,11 @@
 ---
-title: Automate Change Guide
-tags: [automate_change]
-keywords: automate change guide
-last_updated: March 24, 2022
-summary: "Automate Change Guide"
+title: Microservices Visiblity Guide
+tags: [visibility]
+keywords: visibility
+last_updated: March 29, 2022
+summary: " Microservices Visiblity Guide"
 sidebar: artemis_sidebar
-permalink: artemis_automate_change_guide.html
+permalink: artemis_microservice_viz_guide.html
 folder: artemis
 ---
 
@@ -21,8 +21,6 @@ folder: artemis
 
 {% include pages/configure_kubectl_for_aks.md %}
 
-{% include pages/install_sn_devops_change.md %}
-
-{% include pages/install_sn_devops_config.md %}
+{% include pages/install_sn_sro.md %}
 
 {% include links.html %}

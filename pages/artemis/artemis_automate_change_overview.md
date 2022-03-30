@@ -3,7 +3,7 @@ title: Automate Change Overview
 tags: [automate_change]
 keywords: automate change
 last_updated: March 24, 2022
-summary: "Automate Change"
+summary: "Automate Change Overview"
 sidebar: artemis_sidebar
 permalink: artemis_automate_change_overview.html
 folder: artemis

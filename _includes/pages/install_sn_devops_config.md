@@ -1,6 +1,6 @@
 ### Install ServiceNow DevOps Config
 
-ServiceNow DevOps Config helps Cloud Native Teams define advanced validation rules for comparing *configuration* changes against defined baselines and preventing unauthorised changes to deployment environments. Use the built-in Change Approval Workflows to completely automate the change approval process.
+ServiceNow DevOps Config helps Cloud Native Teams define advanced validation rules for comparing *configuration* changes against defined baselines and preventing unauthorised changes to deployment environments. Use the built-in Change Approval Workflows to completely automate the change approval process. Installation is as folows:
 
 1. Login to your NOW Instance as Administrator
 
