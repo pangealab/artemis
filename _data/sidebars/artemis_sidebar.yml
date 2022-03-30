@@ -35,17 +35,7 @@ entries:
     - title: 1.0 Release Notes
       url: /artemis_release_notes_10.html
       output: web, pdf
-
-  - title: Automate Change
-    output: web, pdf
-    folderitems:
-    - title: Overview
-      output: web
-      url: /artemis_automate_change_overview.html
-    - title: Guide
-      output: web
-      url: /artemis_automate_change_guide.html
-     
+  
   - title: Microservice Visibility
     output: web, pdf
     folderitems:
@@ -56,6 +46,16 @@ entries:
       output: web
       url: /artemis_microservice_viz_guide.html
 
+  - title: Automate Change
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      output: web
+      url: /artemis_automate_change_overview.html
+    - title: Guide
+      output: web
+      url: /artemis_automate_change_guide.html
+  
   - title: Measure Service Resilience
     output: web, pdf
   #   folderitems:

@@ -11,7 +11,7 @@ folder: artemis
 
 Increase the visibility of Cloud Native microservices in a single Workspace. Quickly register services in minutes via REST and onboard your distributed teams. Connect your services to telemetry via Webhook integration and resolve incidents faster with alert automation.
 
-# Dataflow
+## Dataflow
 
 ![Dataflow](images/visibility_dataflow.png)
 
@@ -22,7 +22,7 @@ Increase the visibility of Cloud Native microservices in a single Workspace. Qui
 1. Services are registered in ServiceNow via the `Site Reliability Operations` REST API
 1. Review the `Service Map` in ServiceNow using the `Site Reliability Operations` Workspace
 
-# Components
+## Components
 
 | Component | Description |
 |-----------|-------------|
@@ -31,7 +31,7 @@ Increase the visibility of Cloud Native microservices in a single Workspace. Qui
 | [Azure DevOps Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) | Microsoft Azure Pipelines used to continuously Build, Test, and Deploy to any Platform and Cloud.|
 |[ServiceNow Site Reliability Operations]({{site.data.urls.sro}}) | ServiceNow Change Automation for your Cloud Native Source code.|
 
-# Next Steps
+## Next Steps
 
 * Follow the [Guide](artemis_microservice_viz_guide.html) to implement in your environment.
 

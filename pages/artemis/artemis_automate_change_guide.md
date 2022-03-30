@@ -23,6 +23,12 @@ folder: artemis
 
 {% include pages/install_sn_devops_change.md %}
 
+{% include pages/configure_github.md %}
+
+{% include pages/configure_docker_hub.md %}
+
+{% include pages/request_sn_instance.md %}
+
 {% include pages/install_sn_devops_config.md %}
 
 {% include links.html %}
