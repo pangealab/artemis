@@ -14,8 +14,8 @@ GitHub is the leading Source Code hosting platform for Version Control & Collabo
     | Field | Value |
     |-------|-------|
     | Note  | Any memorable string (e.g. `myrepo`) |
-    | Expiration | 30 days or longer | 
-    | Scope | repo:* |
+    | Expiration | `30 days` (or longer) | 
+    | Scope | `repo:*` |
 
 1. Safeguard your `Personal Access Token`
 

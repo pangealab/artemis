@@ -6,12 +6,12 @@ ServiceNow DevOps Config helps Cloud Native Teams define advanced validation rul
 
 1. Navigate to the **System Definition > Plugins** and install or activate the following plugins:
 
-   | Plugin Name                                   | Plugin ID            |
-   | --------------------------------------------- | -------------------- |
-   | DevOps Config V1.0.3                          | sn_devops_config     |
-   | DevOps Config Insights V1.0.3                 | sn_devops_config_i   |
-   | DevOps Config Policy Content Pack V1.0.3      | sn_devops_config_p   |
-   | DevOps Config Exporter Content Pack V1.0.3    | sn_devops_config_e   |
-   | Configuration Data Management V1.0.0          | sn_cdm               |
-   | Context Menu Component V1.0.0                 | sn_cdm_ctx_menu      |
-   | Policy as Code Engine V1.0.0                  | sn_pace              |
+   | Plugin Name                                   | Plugin ID              |
+   | --------------------------------------------- | ---------------------- |
+   | DevOps Config V1.0.3                          | `sn_devops_config`     |
+   | DevOps Config Insights V1.0.3                 | `sn_devops_config_i`   |
+   | DevOps Config Policy Content Pack V1.0.3      | `sn_devops_config_p`   |
+   | DevOps Config Exporter Content Pack V1.0.3    | `sn_devops_config_e`   |
+   | Configuration Data Management V1.0.0          | `sn_cdm`               |
+   | Context Menu Component V1.0.0                 | `sn_cdm_ctx_menu`      |
+   | Policy as Code Engine V1.0.0                  | `sn_pace`              |

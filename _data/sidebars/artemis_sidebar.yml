@@ -28,13 +28,17 @@ entries:
       output: web
       type: homepage
 
-  - title: Release Notes
-    output: web, pdf
+    - title: Release Notes
+      url: /artemis_release_notes.html
+      output: web, pdf      
+
+  - title: Installation
+    output: web
     folderitems:
 
-    - title: 1.0 Release Notes
-      url: /artemis_release_notes_10.html
-      output: web, pdf
+    - title: Prerequisites
+      url: /artemis_prerequisites.html
+      output: web
   
   - title: Microservice Visibility
     output: web, pdf

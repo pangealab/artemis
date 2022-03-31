@@ -8,4 +8,4 @@ ServiceNow DevOps Change Velocity helps Cloud Native Teams define Change Approva
 
    | Plugin Name                                   | Plugin ID              |
    | --------------------------------------------- | -----------------------|
-   | DevOps Change Velocity  V1.33.3               | sn_devops_chgvlcty     |
+   | DevOps Change Velocity  V1.33.3               | `sn_devops_chgvlcty`   |

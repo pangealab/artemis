@@ -4,13 +4,37 @@ SSH (Secure Shell) keys are acces credentials that are used in the SSH protocol 
 
 1. Start a Bash Shell
 
-1. Create a Service Account SSH Key (See Example below)
+1. Create a Service Account SSH Key as follows:
 
     ```
     ssh-keygen -t rsa -b 4096 -C "olympus@demo.com" -f $HOME/.ssh/olympus
     ```
+    
+    Command prompts and output are as follows:
+    
+    ```
+    Generating public/private rsa key pair
+    Enter file in which to save the key (~/.ssh/olympus):
+    Enter passphrase (empty for no passphrase):
+    Your identification has been saved in ~/.ssh/olympus
+    Your public key has been saved in ~/.ssh/olympus.pub
+    ```
 
-    > NOTE: In this example we are creating an RSA 4096 bit SSH key called `olympus` and for tracking purposes we are using an arbitrary comment of `olympus@demo.com` and storing the SSH Key files in the $HOME/.ssh folder
+* Create a Personal SSH Key as follows:
+
+    ```
+    ssh-keygen -t rsa -b 4096 -C "YOUR EMAIL ADDRESS"
+    ```
+    
+    Command prompts and output are as follows:
+
+    ```
+    Generating public/private rsa key pair
+    Enter file in which to save the key (~/.ssh/id_rsa):
+    Enter passphrase (empty for no passphrase):
+    Your identification has been saved in ~/.ssh/id_rsa
+    Your public key has been saved in ~/.ssh/id_rsa.pub
+    ```
 
 * Set SSH Permissions
 
@@ -19,10 +43,4 @@ SSH (Secure Shell) keys are acces credentials that are used in the SSH protocol 
     chmod 644 ~/.ssh/authorized_keys
     ``` 
 
-* Safeguard Service Account SSH Key
-
-    > NOTE: The SSH Key is made up of a public key file (.pub file extension) and a corresponding private key file (without an extension)
-
-* Create a Personal SSH Key (Same steps as above, except a different key name (e.g. `yourname`)
-
-* Safeguard Personal SSH Key
+* Safeguard both SSH Keys

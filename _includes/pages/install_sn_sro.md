@@ -6,6 +6,6 @@ Site Reliability Operations increases the visibility of microservices in a singl
 
 1. Navigate to the **System Definition > Plugins** and install or activate the following plugins:
 
-   | Plugin Name                                   | Plugin ID            |
-   | --------------------------------------------- | -------------------- |
-   | Site Reliability Operations V14.0.2           | sn_sro               |
+   | Plugin Name                                   | Plugin ID    |
+   | --------------------------------------------- | ------------ |
+   | Site Reliability Operations V14.0.2           | `sn_sro`     |

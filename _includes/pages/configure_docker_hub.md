@@ -14,7 +14,7 @@ Docker Hub is the leading Docker Public Registry for finding and sharing Docker 
     | Field | Value |
     |-------|-------|
     | Description  | Any memorable string (e.g. `mytoken`) |
-    | Scope | Read, Write, Delete |
+    | Scope | `Read, Write, Delete` |
 
 1. Safeguard your `Access Token`
 
