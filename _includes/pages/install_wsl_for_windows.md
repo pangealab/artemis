@@ -6,6 +6,6 @@ Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux bin
 
 1. [Install WSL for Windows](https://docs.microsoft.com/en-us/windows/wsl/install)
 
-    > NOTE: By default, the installed Linux distribution will be Ubuntu which what we recommend.
+    > NOTE: By default, the installed Linux distribution will be Ubuntu which is what we recommend.
 
 1. Start a Bash Shell
