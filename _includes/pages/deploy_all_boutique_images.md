@@ -1,6 +1,6 @@
 ### Deploy All Boutique Images
 
-The Boutique application consists of 12 Docker Images which need to be depoyed to Kubernetes using the provided `kubernetes-deploy-all` Pipeline. Procedure is as follows:
+The Boutique application consists of 12 Docker Images which need to be depoyed to your Azure Kubernetes using the provided `kubernetes-deploy-all` Pipeline. Procedure is as follows:
 
 1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
 
