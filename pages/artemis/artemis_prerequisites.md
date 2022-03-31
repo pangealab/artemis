@@ -43,4 +43,6 @@ This site provides documentation, training, and other notes for implementing the
 
 {% include pages/deploy_all_boutique_images.md %}
 
+{% include pages/check_boutique_deployment.md %}
+
 {% include links.html %}

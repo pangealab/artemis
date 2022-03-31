@@ -20,8 +20,8 @@ You can create connections from Azure Pipelines to external and remote services 
     | Service or connection type | `GitHub` |
     | Authentication method | `Personal Access Token` |
     | Personal Access Token | YOUR GITHUB PERSONAL ACCESS TOKEN |
-    | Service connection name | Any memorable name (e.g. `github`) |
-    | Grant access permission to all pipelines | `Checked` |
+    | Service connection name | `github` |
+    | Grant access permission to all pipelines | `True` |
 
 1. Create a _new service connection_ for Kubernetes as follows:
 
@@ -32,5 +32,6 @@ You can create connections from Azure Pipelines to external and remote services 
     | Azure Subscription | YOUR AZURE SUBSCRIPTION ID |
     | Cluster | YOUR AKS CLUSTER NAME (e.g. `olympus`) |
     | Namespace | `default` |
-    | Service connection name | Any memorable name (e.g. `kubernetes`) |
-    | Grant access permission to all pipelines | `Checked` |
+    | Use cluster admin credentials | `True` |
+    | Service connection name | `olympus` |
+    | Grant access permission to all pipelines | `True` |

@@ -42,15 +42,9 @@ The Boutique application consists of 12 Docker Images which need to be depoyed t
 
     | Field | Value |
     |-------|-------|
-    | Name  |  `docker-publish-all` |
+    | Name  |  `kubernetes-deploy-all` |
     | Select folder | `\azure-pipelines` | 
 
 1. Press `Run Pipeline`
 
 1. Review parameters and press `Run`
-
-    > NOTE: Be patient, the pipeline takes at least 10 minutes to complete.
-
-1. Browse to [Docker Hub]({{site.data.urls.docker_hub}}) to verify your images.
-
-1. You should see 12 new Docker Images pushed under your account.
