@@ -13,7 +13,19 @@ folder: artemis
 
 This site provides documentation, training, and other notes for implementing the Cloud Native Service Operations for ServiceNow Solutions. The instructions provided are geared towards developers and assume a basic level of competency and familiarity with the tools listed. Following is a list of prerequisite tools, configuration steps, and accesses needed before implementing the Cloud Native Service Operation solutions.
 
-## Prerequisites
+## Request a ServiceNow Instance
+
+{% include pages/request_sn_instance.md %}
+
+## Get some Accounts
+
+{% include pages/get_github.md %}
+
+{% include pages/get_azure.md %}
+
+{% include pages/get_docker_hub.md %}
+
+## Setup your Workstation
 
 {% include pages/install_wsl_for_windows.md %}
 
@@ -21,21 +33,23 @@ This site provides documentation, training, and other notes for implementing the
 
 {% include pages/install_azure_cli_with_wsl.md %}
 
+## Deploy Azure Kubernetes 
+
 {% include pages/install_aks_with_azure_cli.md %}
 
 {% include pages/configure_kubectl_for_aks.md %}
 
-{% include pages/configure_github.md %}
+## Configure your Projects
 
-{% include pages/create_ado_account.md %}
+{% include pages/configure_github.md %}
 
 {% include pages/configure_docker_hub.md %}
 
-{% include pages/request_sn_instance.md %}
+{% include pages/configure_ado_project.md %}
+
+## Deploy Boutique
 
 {% include pages/fork_boutique.md %}
-
-{% include pages/configure_ado_project.md %}
 
 {% include pages/build_all_boutique_images.md %}
 

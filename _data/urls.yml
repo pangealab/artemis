@@ -1,6 +1,7 @@
 github: "https://github.com"
 ado: "https://dev.azure.com"
-azure: "https://portal.azure.com"
+azure_portal: "https://portal.azure.com"
+azure_com: "https://azure.microsoft.com"
 docker_hub: "https://hub.docker.com"
 devops_change_velocity: "https://store.servicenow.com/sn_appstore_store.do#!/store/application/f1d62f041b3abc10d6f254a5624bcbf5/1.33.3?referer=%2Fstore%2Fsearch%3Flistingtype%3Dallintegrations%25253Bancillary_app%25253Bcertified_apps%25253Bcontent%25253Bindustry_solution%25253Boem%25253Butility%25253Btemplate%26q%3DDevOps&sl=sh"
 devops_change_config: "https://store.servicenow.com/sn_appstore_store.do#!/store/application/60d7320a534220103969ddeeff7b1222"

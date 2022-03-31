@@ -1,6 +1,6 @@
 ### Check Boutique Deployment
 
-After all 12 Boutique Pods have been deployed, you should check all the pod statuses and retrieve and safeguard the `frontend` service EXTERNAL-IP. Procedure is as follows:
+After all 12 Boutique Pods have been deployed, you should check all the pod statuses. In addition, retrieve and safeguard the `frontend-external` service EXTERNAL-IP for your demos. Procedure is as follows:
 
 1. Start a Bash Shell
 
@@ -22,7 +22,7 @@ After all 12 Boutique Pods have been deployed, you should check all the pod stat
     watch kubectl get pods -n cassandra
     ```
 
-1. Retrieve the `frontend` service EXTERNAL-IP
+1. Retrieve the `frontend-external` service EXTERNAL-IP
 
     ```
     kubectl get service frontend-external -n cassandra
