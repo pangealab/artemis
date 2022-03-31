@@ -11,23 +11,7 @@ folder: artemis
 
 ## Prerequisites
 
-{% include pages/install_wsl_for_windows.md %}
-
-{% include pages/create_ssh_key.md %}
-
-{% include pages/install_azure_cli_with_wsl.md %}
-
-{% include pages/install_aks_with_azure_cli.md %}
-
-{% include pages/configure_kubectl_for_aks.md %}
-
 {% include pages/install_sn_devops_change.md %}
-
-{% include pages/configure_github.md %}
-
-{% include pages/configure_docker_hub.md %}
-
-{% include pages/request_sn_instance.md %}
 
 {% include pages/install_sn_devops_config.md %}
 
