@@ -13,6 +13,19 @@ folder: artemis
 
 {% include pages/install_sn_sro.md %}
 
+## Verify Service Map
+### Locate Service Map YAML File in GitHub
+
+1. Browse to [GitHub]({{site.data.urls.github}})
+
+1. Navigate to your GitHub Repository (e.g. `cassandra`)
+
+1. Locate the `registration/boutique.json` file
+
+### Review Service Map
+
+1. Verify all `services` and `relationships` are valid
+
 ## Register Services
 
 ### Configure Pipeline
