@@ -48,9 +48,11 @@ The Boutique application consists of 12 Docker Images which need to be built and
 
 1. Press `Run Pipeline`
 
-1. Review parameters and press `Run`
+1. Review **Variables** and press `Run`
 
     > NOTE: Be patient, the pipeline takes at least 10 minutes to complete.
+
+1. Monitor the Pipeline and make sure it runs successfully
 
 1. Browse to [Docker Hub]({{site.data.urls.docker_hub}}) to verify your images.
 

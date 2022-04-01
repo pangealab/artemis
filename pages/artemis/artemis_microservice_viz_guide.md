@@ -15,19 +15,7 @@ folder: artemis
 
 ## Register Services
 
-### Configure SRO User ID
-
-Registering services via REST API requires a ServiceNow SRO User ID to be created and roled accordingly. Procedure is as follows:
-
-1. Login to your SN Instance as Administrator
-
-1. Navigate to **User Admininstration > Users**
-
-1. Create an SRO User ID (e.g. `sroadmin`) and grant the `sn_sro.sro_admin` Role
-
-### Register Boutique Application
-
-The Boutique application consists of 12 services which need to be registered in the ServiceNow CMDB for visibility and observability. Procedure is as follows:
+### Configure Pipeline
 
 1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
 
@@ -60,8 +48,8 @@ The Boutique application consists of 12 services which need to be registered in 
 
     | Name | Value | Keep this value secret | Let users override this value when running this pipeline | 
     |-------|-------|-------|-------|
-    | NOW_USERNAME | SRO USER ID (e.g. `sroadmin`) | False | True | 
-    | NOW_PASSWORD | SRO USER PASSWORD  | True | True |
+    | NOW_USERNAME | YOUR SN USER ID | False | True | 
+    | NOW_PASSWORD | YOUR SN PASSWORD | True | True |
     | NOW_SERVER | YOUR SERVICENOW URL | False | True |
     | SERVICE_MAP | `boutique.json` | False | True |
 
@@ -74,68 +62,41 @@ The Boutique application consists of 12 services which need to be registered in 
     | Name  |  `register-services` |
     | Select folder | `\azure-pipelines` | 
 
+### Run Pipeline    
+
 1. Press `Run Pipeline`
 
-1. Review parameters and press `Run`
+1. Review **Variables** and press `Run`
 
-### Configure SRO Application
+1. Monitor the Pipeline and make sure it runs successfully
 
-1. Browse to the [ServiceNow Store]({{site.data.urls.sro}})
+## Configure Site Reliability Operations
+### Create new Teams
 
-1. Download the `Manage_Teams_Flows.xml` Update Set
+1. Navigate to **Site Reliability Operations > Site Teams > All Teams**
 
-    > NOTE: See the `Supporting Links and Docs` section
+1. Create a Team called `Team Boutique` and add yourself as a member:
 
-1. Login to your SN Instance as Administrator
+### Assign all Services to the new Team
 
-1. Navigate to **System Update Sets > Retrieved Update Sets**
+1. Navigate to **Site Reliability Operations > Services > Unasigned Services**
 
-1. Click on the **Import Update Set from XML** link and upload file
+1. Set the **Operational Status** for each Service to `Operational`
 
-1. Preview & Commit Update Set
+1. Set the **Support Group** for each Service to `Team Boutique`
 
-1. Navigate to **Service Catalog > Maintain Items**
-
-1. Click on the `Create New Team` Catalog Item
-
-1. Enable edits by clicking on the `To edit this record click here` link
-
-1. Press the `Copy` button to copy the Catalog Item
-
-1. Name Catalog Item as `Create New SRO Team`
-
-1. Set the **Active** field to `True`
-
-1. Click on the **Process Engine** Tab
-
-1. Set the **Flow** field to `Global - Create New SRO Team`
-
-1. Press the **Update** button
-
-1. Copy the `sys_id` of the new Catalog Item
-
-1. Navigate to **Site Reliability Operations > Administration > Properties**
-
-1. Enable edits by clicking on the `To edit this record click here` link
-
-1. Set the **Update team subflow name** field to `global.global__update_team_subflow`
-
-1. Set the **Catalog Item (sys_id) which is used to Create a Team** field to the `sys_id` copied earlier
-
-1. Press the **Save** button
-
-## Create new Teams
+### Review the Service Map
 
 1. Navigate to **Site Reliability Operations > Site Reliability Ops Workspace**
 
-1. Navigate to **Home > My Teams > Create New Team**
+1. Click on the **Services** Icon
 
-1. Create a Team named `Boutique Team` and make yourself a member
+1. Click on the **Boutique** Service
 
-1. Navigate to **Self Service > Requested Items**
+1. Clon on **Relationships** Tab
 
-1. Locate the `Create New SRO Team` Request Item
+1. Review the _Boutique_ Service Map
 
-1. Set the **Approval** field to `Approved`
+    ![Boutique Service Map](images/boutique_service_map.png)
 
 {% include links.html %}

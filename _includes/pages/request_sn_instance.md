@@ -7,3 +7,5 @@ ServiceNow (SN) is a leading Cloud Computing platform built to help companies ma
 
 * ServiceNow employees can request a *new internal instance* from:
     *  [https://support.servicenow.com](https://support.servicenow.com)
+
+> NOTE: Create yourself a User Account with an Administrator `admin` Role
