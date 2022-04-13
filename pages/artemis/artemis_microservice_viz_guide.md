@@ -26,6 +26,8 @@ folder: artemis
 
 1. Verify all `services` and `relationships` are valid
 
+    ![Boutique Json](images/boutique_json.png)
+
 ## Register Services
 
 ### Configure Pipeline
@@ -82,6 +84,8 @@ folder: artemis
 1. Review **Variables** and press `Run`
 
 1. Monitor the Pipeline and make sure it runs successfully
+
+    ![Register Services](images/register_services_pipeline.png)
 
 ## Configure Site Reliability Operations
 ### Create new Teams
