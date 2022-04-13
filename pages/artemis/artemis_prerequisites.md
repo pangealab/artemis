@@ -33,6 +33,8 @@ This site provides documentation, training, and other notes for implementing the
 
 {% include pages/install_azure_cli_with_wsl.md %}
 
+{% include pages/install_azure_cli_with_brew.md %}
+
 ## Deploy Azure Kubernetes 
 
 {% include pages/install_aks_with_azure_cli.md %}

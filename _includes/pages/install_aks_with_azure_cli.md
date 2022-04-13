@@ -4,13 +4,13 @@ Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster
 
 1. Start a Bash Shell
 
-* Login to Azure
+1. Login to Azure
 
     ```
     az login
     ```
 
-* Create Resource Group (See Example below)
+1. Create Resource Group (See Example below)
 
     ```
     az group create -n "olympus" -l "eastus"
@@ -19,7 +19,7 @@ Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster
     > NOTE: In this example we are creating a resource group called `olympus` and
     using the `eastus` region. 
 
-* Get latest AKS Versions available for your region (See Example below)
+1. Get latest AKS Versions available for your region (See Example below)
 
     ```
     az aks get-versions -l "eastus" -o table
@@ -28,7 +28,7 @@ Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster
     > NOTE: We recommend avoiding *preview* releases for stability
      
 
-* Deploy AKS (See Example below)
+1. Deploy AKS (See Example below)
 
     ```
     az aks create --resource-group "olympus" --name "olympus" --node-count 4 --kubernetes-version "1.21.9" --ssh-key-value $HOME/.ssh/olympus.pub --node-vm-size "Standard_DS2_v2" --node-osdisk-size 30 --enable-managed-identity

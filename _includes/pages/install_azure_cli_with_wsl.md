@@ -1,6 +1,6 @@
 ### Install Azure CLI for WSL Ubuntu
 
-The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation. Installation is as follows:
+The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation. If you have a Windows Workstation with WSL Ubuntu, the installation is as follows:
 
 1. Start a Bash Shell
 
@@ -27,14 +27,16 @@ The Azure command-line interface (Azure CLI) is a set of commands used to create
     | sudo tee /etc/apt/sources.list.d/azure-cli.list    
     ```
 
-* Install the Azure CLI
+1. Install the Azure CLI
 
     ```
     sudo apt-get update
     sudo apt-get install azure-cli
     ```
 
-* Test Login
+    > NOTE: For more detailed instructions consult the [Microsoft Azure CLL Docs for WSL on Ubuntu](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)
+
+1. Test Login
 
     ```
     az login
