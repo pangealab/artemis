@@ -33,8 +33,8 @@ Kubectl is a command line tool used to run commands against Kubernetes clusters.
 1. Test AKS Cluster Connection
 
     ```
-    kubectl get namespaces
     kubectl cluster-info
     kubectl get nodes -A
-    kubectl get pods -o wide -A
     ```
+
+    ![Boutique Frontend](images/kubectl_cluster_info.png)
