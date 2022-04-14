@@ -46,3 +46,7 @@ folder: artemis
 1. Press the `Approve, Install & Authorize` Button
 
     ![GitHub Connection](images/ado_github_connection.png)
+
+1. At this point, all commits in Git using the Azure Boards Work Item notation (e.g. AB#123) will be propagated to the relevant Work Item.
+
+    >NOTE: For more information on linking Git commits to Azure Boards see the [Azure Devops Documentation](https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops#use-ab-mention-to-link-from-github-to-azure-boards-work-items)
