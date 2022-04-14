@@ -10,6 +10,6 @@ Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux bin
     wsl --install
     ```
 
-    > NOTE: For more detailed instructions consult the [Microsoft WSL for Windows Install Docs]((https://docs.microsoft.com/en-us/windows/wsl/install)
+    > NOTE: For more detailed instructions consult the [Microsoft WSL for Windows Install Docs](https://docs.microsoft.com/en-us/windows/wsl/install)
 
 1. Start a Bash Shell
