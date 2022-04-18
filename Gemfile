@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "http://rubygems.org"
 
 # to publish on github page
 gem 'github-pages', group: :jekyll_plugins
