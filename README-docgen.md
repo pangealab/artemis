@@ -82,3 +82,35 @@ Documentation project for the Reference Architecture Doc Site with Jekyll & Pand
 1. Browse Local Site:
 
     http://127.0.0.1:4000   
+
+
+# Zscaler Root Certificates
+
+Some organizations require the use of Zscaler for Internet content filtering. In order for your tools (e.g. Ruby, Python, Node, etc.) to access secure repositories, a Zscaler Root Security Certificate must be installed on the device. For more information visit the [Zscaler Help](https://help.zscaler.com/zia/adding-custom-certificate-application-specific-trusted-store)
+
+# Zscaler Root Certificates on WSL
+
+1. Request the Zscaler Root Security Certificate from your administrator and save it on a local folder (e.g. /mnt/c/temp )
+
+    >NOTE: This usually is a .zip file (e.g. ZscalerRootCerts.zip)
+
+1. Start a Bash Shell
+
+1. Create Certs folder
+
+    ```
+    mkdir ~/ssl_certs
+    ```
+
+1. Unzip Zscaler Root CA certificate
+
+    ```
+    unzip -p /mnt/c/Temp/ZscalerRootCerts.zip ZscalerRootCerts/ZscalerRootCertificate-2048-SHA256.crt > ~/ssl_certs/ZscalerRootCertificate-2048-SHA256.crt
+    ```
+
+1. Configure Zscaler Root CA for Ruby
+
+    ```
+    echo '# Zscaler Ruby Config' >> ~/.bashrc
+    echo 'export SSL_CERT_FILE="$HOME/ssl_certs/ZscalerRootCertificate-2048-SHA256.crt"' >> $HOME/.bashrc
+    ```
