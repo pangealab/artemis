@@ -109,7 +109,7 @@ folder: artemis
 
     | Field | Value |
     |-------|-------|
-    | Password | YOUR DEVOPS ADMIN USER PASSWORD |
+    | Password | YOUR DEVOPS INTEGRATION USER PASSWORD |
 
 1. Press **Update** Button
 
@@ -163,7 +163,7 @@ folder: artemis
     | Field | Value |
     |-------|-------|
     | Integration User | `DevOps Integration User` |
-    | Integration user password | YOUR INTEGRATION USER PASSWORD| 
+    | Integration user password | YOUR DEVOPS INTEGRATION USER PASSWORD | 
 
 1. Press **Send** Button
 
