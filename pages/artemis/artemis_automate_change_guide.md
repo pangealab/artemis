@@ -17,7 +17,9 @@ folder: artemis
 
 {% include links.html %}
 
-## Create Some ADO Work Items
+
+## Configure ADO Backlog
+### Create Some ADO Work Items
 
 1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
 
@@ -28,8 +30,7 @@ folder: artemis
     ![Work Items](images/ado_work_items.png)
 
     >NOTE: As a best coding practice, developers should set the Git commit message to one of these Work Items relating the code change to the Azure Boards work item.
-
-## Connect GitHub with Azure Boards
+### Connect GitHub with Azure Boards
 
 1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
 
@@ -51,7 +52,8 @@ folder: artemis
 
     >NOTE: For more information on linking Git commits to Azure Boards see the [Azure Devops Documentation](https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops#use-ab-mention-to-link-from-github-to-azure-boards-work-items)
 
-## Create ServiceNow DevOps App
+## Configure ServiceNow DevOps Change
+### Create ServiceNow DevOps App
 
 1. Login to your NOW Instance as Administrator
 
@@ -61,9 +63,9 @@ folder: artemis
 
     | Field | Value |
     |-------|-------|
-    | Application Name | `Boutique App`) |
+    | Application Name | `Boutique App` |
 
-## Create ServiceNow DevOps Admin User
+### Create ServiceNow DevOps Admin User
 
 1. Login to your NOW Instance as Administrator
 
@@ -79,7 +81,7 @@ folder: artemis
 
 1. Press **Submit** Button
 
-## Create ServiceNow DevOps Admin Credential
+### Create ServiceNow DevOps Admin Credential
 
 1. Login to your NOW Instance as Administrator
 
@@ -95,7 +97,7 @@ folder: artemis
 
 1. Press **Submit** Buttom
 
-## Configure ServiceNow DevOps Integration User
+### Configure ServiceNow DevOps Integration User
 
 1. Login to your NOW Instance as Administrator
 
@@ -111,7 +113,7 @@ folder: artemis
 
 1. Press **Update** Button
 
-## Create ServiceNow DevOps Connection
+### Create ServiceNow DevOps Connection
 
 1. Login to your NOW Instance as Administrator
 
@@ -131,7 +133,7 @@ folder: artemis
 
 1. Press **Submit** Button
 
-## Create DevOps GitHub Tool
+### Create DevOps GitHub Tool
 
 1. Login to your NOW Instance as Administrator
 
@@ -167,7 +169,7 @@ folder: artemis
 
     >NOTE: The provided Tool URL and credentials will be used to create a Webhook from the Git Repo to ServiceNow.
 
-## Create DevOps ADO Tool
+### Create DevOps ADO Tool
 
 1. Login to your NOW Instance as Administrator
 
