@@ -2,7 +2,7 @@
 
 entries:
 - title: sidebar
-  product: Catalog
+  product: Solutions Catalog
   # version: 1.0
   folders:
 
@@ -83,3 +83,11 @@ entries:
   #     output: web
   #   - title: Guide
   #     output: web
+
+  - title: Microservice Observability
+    output: web, pdf
+  #   folderitems:
+  #   - title: Overview
+  #     output: web
+  #   - title: Guide
+  #     output: web  
