@@ -53,6 +53,17 @@ folder: artemis
     >NOTE: For more information on linking Git commits to Azure Boards see the [Azure Devops Documentation](https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops#use-ab-mention-to-link-from-github-to-azure-boards-work-items)
 
 ## Configure ServiceNow DevOps Change
+
+### Configure Application Services Change Group
+
+1. Login to your NOW Instance as Administrator
+
+1. Navigate to **Configuration > Application Services**
+
+1. For all Application Services under change control, Set the **Change Group** field to the relevant group (e.g. `Team Boutique`)
+
+    ![Change Group](images/change_group_assignment.png)
+
 ### Create ServiceNow DevOps App
 
 1. Login to your NOW Instance as Administrator
@@ -180,7 +191,6 @@ folder: artemis
     | Name | YOUR ADO TOOL NAME (e.g. `MyAdo`) |
     | Tool Integration | `Azure DevOps` | 
     | Tool Url |  YOUR ADO ORG URL (e.g. `https://dev.azure.com/YOURORG/YOURREPO`) |
-    | Credential Type | `Basic Auth` |
     | Tool Username | YOUR ADO TOKEN NAME |
     | Tool Password / Access Token | YOUR ADO TOKEN VALUE |    
 
@@ -203,10 +213,69 @@ folder: artemis
 
 1. Press **Send** Button
 
-    >NOTE: The provided Tool URL and credentials will be used to create a Webhook from the ADO Repo to ServiceNow.
+    >NOTE: The provided Tool URL and credentials will be used to create 2 Service Connections in Azure DevOps
 
 1. Select **Pipelines** Tab
 
 1. For all Pipelines, Set the **App** field to `Boutique App`
 
 1. For all Pipelines, Set the **Track** field to `true`
+
+    ![DevOps Pipelines](images/devops_pipelines.png)
+
+### Check Service Connections
+
+1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
+
+1. Select the Boutique Project (e.g. `cassandra`) you configured earlier.
+
+1. Navigate to `Project Settings` and press the `Service Connections` button.
+
+1. Locate the 2 ServiceNow Service Connections your created earlier from ServiceNow.
+
+    ![Service Connections](images/ado_service_connections.png)
+
+### Configure Pipeline
+
+1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
+
+1. Select the Boutique Project (e.g. `cassandra`) you configured earlier.
+
+1. Navigate to `Pipelines` and create an `azure-pipelines` folder, if it does not exist.
+
+1. Navigate to the `azure-pipelines` folder and press `Create Pipeline`
+
+1. For the `Where is your code?` prompt, select `GitHub`
+
+1. For the `Select a repository` prompt, select your GitHub Repository.
+
+1. Press `Approve and Install`
+
+1. Enter your GitHub password if prompted.
+
+1. At the `Configure your pipeline` prompt, select `Existing Azure Pipelines YAML file`
+
+1. At the `Select an existing YAML file` prompt, set fields as follows:
+
+    | Field | Value |
+    |-------|-------|
+    | Branch  | `main` |
+    | Path | `/azure-pipelines/kubernetes-deploy.yml` | 
+
+1. Press `Continue` to review your pipeline YAML.
+
+1. Un-Comment the `DevOps_Change` Stage and set all occurences of `connectedServiceName` to your ServiceNow Service Connection name.
+
+    ![Uncomment Pipeline](images/uncomment_pipeline.png)
+
+1. Create the following Pipeline Variables:
+
+    | Name | Value | Keep this value secret | Let users override this value when running this pipeline | 
+    |-------|-------|-------|-------|
+    | REPO_USERNAME | YOUR DOCKER HUB ID | False | True | 
+    | REPO_PAT | YOUR DOCKER PAT | True | True |
+    | REPO_PREFIX | YOUR DOCKER HUB ID  | False | True |
+    | SERVICE_NAME |  YOUR SERVICE NAME (e.g. `frontend`) | False | True | 
+    | SERVICE_NAMESPACE | `cassandra`| False | True |
+
+1. Using the `Run` Button, select `Save Pipeline`
