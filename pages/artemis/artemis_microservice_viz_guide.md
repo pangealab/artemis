@@ -36,7 +36,7 @@ folder: artemis
 
 1. Select the Boutique Project (e.g. `cassandra`) you configured earlier.
 
-1. Navigate to `Pipelines` and create an `azure-pipelines` folder, if it does not exist.
+1. Navigate to `Pipelines > All` and create an `azure-pipelines` folder, if it does not exist.
 
 1. Navigate to the `azure-pipelines` folder and press `Create Pipeline`
 

@@ -54,13 +54,33 @@ folder: artemis
 
 ## Configure ServiceNow DevOps Change
 
+
+### Configure DevOps Performance Analytics Jobs
+
+1. Login to your NOW Instance as Administrator
+
+1. Navigate to **Performance Analytics > Data Collector > Jobs**
+
+1. Search for Jobs where **Name** = `*DevOps`
+
+    ![PA Jobs](images/pa_jobs.png)
+
+1. For each Job, set the fields as follows:
+
+    | Field | Value |
+    |-------|-------|
+    | Active | `true` |
+    | Run as | `System Administrator` |
+
+    >NOTE: You will have to switch application scope from `Global` to `DevOps Data Model` or `DevOps Insights` accordingly to make changes to _Jobs_.
+
 ### Configure Application Services Change Group
 
 1. Login to your NOW Instance as Administrator
 
 1. Navigate to **Configuration > Application Services**
 
-1. For all Application Services under change control, Set the **Change Group** field to the relevant group (e.g. `Team Boutique`)
+1. For all Application Services under change control, set the **Change Group** field to the relevant group (e.g. `Team Boutique`)
 
     ![Change Group](images/change_group_assignment.png)
 
@@ -217,9 +237,9 @@ folder: artemis
 
 1. Select **Pipelines** Tab
 
-1. For all Pipelines, Set the **App** field to `Boutique App`
+1. For all Pipelines, set the **App** field to `Boutique App`
 
-1. For all Pipelines, Set the **Track** field to `true`
+1. For all Pipelines, set the **Track** field to `true`
 
     ![DevOps Pipelines](images/devops_pipelines.png)
 
@@ -231,7 +251,7 @@ folder: artemis
 
 1. Navigate to `Project Settings` and press the `Service Connections` button.
 
-1. Locate the 2 ServiceNow Service Connections your created earlier from ServiceNow.
+1. Locate the 2 ServiceNow Service Connections you created earlier from ServiceNow.
 
     ![Service Connections](images/ado_service_connections.png)
 
@@ -241,7 +261,7 @@ folder: artemis
 
 1. Select the Boutique Project (e.g. `cassandra`) you configured earlier.
 
-1. Navigate to `Pipelines` and create an `azure-pipelines` folder, if it does not exist.
+1. Navigate to `Pipelines > All` and create an `azure-pipelines` folder, if it does not exist.
 
 1. Navigate to the `azure-pipelines` folder and press `Create Pipeline`
 
@@ -279,3 +299,63 @@ folder: artemis
     | SERVICE_NAMESPACE | `cassandra`| False | True |
 
 1. Using the `Run` Button, select `Save Pipeline`
+
+## Approve Code Change
+
+### Make a Code Change
+
+1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
+
+1. Select the Boutique Project (e.g. `cassandra`) you configured earlier.
+
+1. Locate the `src/adservice/src/main/java/hipstershop/AdService.java` file
+
+1. Update the `createAdsMap` method for any product to display different discount text as follows:
+
+    ![Code Change](images/code_change.png)
+
+1. Commit changes using the Azure Boards Work Item notation (e.g. AB#123)
+
+    ![Code Change](images/commit_code.png)
+
+### Trigger the Azure DevOps Pipeline
+
+1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
+
+1. Select the Boutique Project (e.g. `cassandra`) you configured earlier.
+
+1. Navigate to `Pipelines > All` and select the `azure-pipelines` folder.
+
+1. Run the `kubernetes-deploy` Pipeline and set parameters as follows:
+
+    | Parameter | Value |
+    |-----------|-------|
+    | SERVICE_NAME  | `adservice` |
+
+1. Notice that the pipeline has been paused, pending change control approval.
+
+    ![Paused Pipeline](images/paused_pipeline.png)
+
+### Approve Change in ServiceNow
+
+1. Login to your NOW Instance as Administrator
+
+1. Navigate to **DevOps > Orchestrate > Pipeline Change Requests**
+
+    ![Change Request](images/change_request.png)
+
+1. Select Change and review all relevant items.
+
+    ![Change Detail](images/change_request_detail.png)
+
+1. Click on the `Approvers` Tab
+
+1. Hover over **Approver** and right-click `Approve` the item.
+
+1. Press the **Implement** Button
+
+    >NOTE: Notice how the Azure DevOps Pipeline has been un-paused.
+
+1. Browse to the EXTERNAL-IP to view the Boutique Application and look for the updated AdService discount text.
+
+    ![Discounted Watches](images/discounted_watches.png)
