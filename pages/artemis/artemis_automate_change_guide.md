@@ -30,6 +30,7 @@ folder: artemis
     ![Work Items](images/ado_work_items.png)
 
     >NOTE: As a best coding practice, developers should set the Git commit message to one of these Work Items relating the code change to the Azure Boards work item.
+
 ### Connect GitHub with Azure Boards
 
 1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
