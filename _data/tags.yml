@@ -18,3 +18,4 @@ allowed-tags:
   - modern_incident
   - measure_resilience
   - automate_change
+  - observability

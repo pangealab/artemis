@@ -305,7 +305,7 @@ folder: artemis
 
 ### Make a Code Change
 
-1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
+1. Sign In to [GitHub]({{site.data.urls.github}})
 
 1. Select the Boutique Project (e.g. `cassandra`) you configured earlier.
 

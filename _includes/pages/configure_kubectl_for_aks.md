@@ -18,23 +18,4 @@ Kubectl is a command line tool used to run commands against Kubernetes clusters.
 
     > NOTE: In this example we are getting credentials in Kubectl format for our k8s cluster called `olympus` in the resource group `olympus` and saving it in the `./kube/` local folder and calling the file `config-aks`
 
-1. Configure kubectl environment variable
-
-    ```
-    export KUBECONFIG=$HOME/.kube/config-aks
-    ```
-
-1. Set kubectl context for AKS (See Example below)
-
-    ```
-    kubectl config use-context olympus
-    ```
-
-1. Test AKS Cluster Connection
-
-    ```
-    kubectl cluster-info
-    kubectl get nodes -A
-    ```
-
-    ![Boutique Frontend](images/kubectl_cluster_info.png)
+{% include pages/login_to_aks.md %}

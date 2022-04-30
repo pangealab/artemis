@@ -1,6 +1,6 @@
-### Deploy All Boutique Images
+### Deploy All Boutique Images using Helm Pipeline
 
-The Boutique application consists of 12 Docker Images which need to be depoyed to your Azure Kubernetes using the provided `kubernetes-deploy-all` Pipeline. Procedure is as follows:
+The Boutique application consists of 12 Docker Images which need to be depoyed to your Azure Kubernetes using the provided `kubernetes-deploy-all` Helm Pipeline. Procedure is as follows:
 
 1. Sign In to [Azure DevOps]({{site.data.urls.ado}})
 
