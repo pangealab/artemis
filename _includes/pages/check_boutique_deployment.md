@@ -4,23 +4,7 @@ After all 12 Boutique Pods have been deployed, you should check all the pod stat
 
 1. Start a Bash Shell
 
-1. Configure kubectl environment variable
-
-    ```
-    export KUBECONFIG=$HOME/.kube/config-aks
-    ```
-
-1. Set kubectl context for AKS (See Example below)
-
-    ```
-    kubectl config use-context olympus
-    ```
-
-1. Check on all Boutique Pods
-
-    ```
-    watch kubectl get pods -n cassandra
-    ```
+{% include pages/login_to_aks.md %}
 
 1. Retrieve the `frontend-external` service EXTERNAL-IP
 

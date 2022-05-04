@@ -19,3 +19,5 @@ allowed-tags:
   - measure_resilience
   - automate_change
   - observability
+  - microservice
+  - discovery

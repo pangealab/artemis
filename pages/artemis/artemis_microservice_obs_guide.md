@@ -1,7 +1,7 @@
 ---
 title: Microservice Observability Guide
-tags: [observability]
-keywords: observability
+tags: [microservice, observability]
+keywords: microservice observability
 last_updated: April 30, 2022
 summary: "Microservice Observability Guide"
 sidebar: artemis_sidebar

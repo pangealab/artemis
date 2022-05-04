@@ -1,6 +1,6 @@
 ---
 title: Microservice Observability Overview
-tags: [observability]
+tags: [microservice, observability]
 keywords: microservice observability
 last_updated: April 30, 2022
 summary: "Microservice Observability Overview"

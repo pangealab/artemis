@@ -68,7 +68,17 @@ entries:
       url: /artemis_microservice_obs_overview.html
     - title: Guide
       output: web
-      url: /artemis_microservice_obs_guide.html      
+      url: /artemis_microservice_obs_guide.html
+
+  - title: Discover Microservices
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      output: web
+      url: /artemis_microservice_disco_overview.html
+    - title: Guide
+      output: web
+      url: /artemis_microservice_disco_guide.html        
   
   - title: Measure Service Resilience
     output: web, pdf

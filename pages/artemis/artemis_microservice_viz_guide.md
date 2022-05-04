@@ -1,6 +1,6 @@
 ---
 title: Microservices Visiblity Guide
-tags: [visibility]
+tags: [microservice, visibility]
 keywords: visibility
 last_updated: March 29, 2022
 summary: "Microservices Visiblity Guide"
