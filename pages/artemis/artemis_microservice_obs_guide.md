@@ -76,7 +76,16 @@ folder: artemis
 
 1. Locate the `helm/templates/kubernetes-manifests.yaml` file
 
-1. Un-Comment the `#Lightstep Instrumentation` section for the `otelcollector` resource (e.g. both _Deployment_ and _Service_ sections)
+1. Un-Comment the Deployment section for the `otelcollector`
+
+1. Un-Comment the `image` section as follows:
+
+    ```yaml
+    image: otel/opentelemetry-collector-contrib:0.49.0 
+    # image: ghcr.io/lightstep/lightstep-partner-toolkit-collector:latest
+    ```
+
+1. Un-Comment the Service section for the `otelcollector`
 
 1. Un-Comment the `#Lightstep Instrumentation` sections for all the services to expose the `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` and `OTEL_RESOURCE_ATTRIBUTES` to Lightstep as follows:
 
