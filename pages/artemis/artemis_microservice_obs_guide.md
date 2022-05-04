@@ -89,7 +89,13 @@ folder: artemis
 
 1. Un-Comment the `#Lightstep Instrumentation` sections for all the services to expose the `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` and `OTEL_RESOURCE_ATTRIBUTES` to Lightstep as follows:
 
-    ![Lightstep Instrumentation](images/lightstep_instrumentation.png)
+    ```yaml
+    # Lightstep Instrumentation
+    - name: OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
+      value: "http://otelcollector:4317"
+    - name: OTEL_RESOURCE_ATTRIBUTES
+      value: "service.name=productcatalogservice,service.version=1.0.0"
+    ```
 
 1. Commit changes
 
