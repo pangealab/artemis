@@ -92,11 +92,16 @@ Implement the [Microservice Observability](artemis_microservice_obs_overview.htm
               grpc:
               http:
           lightstep-streams/mystream: 
-            organization: "${LS_ORG_ID}"
-            project: "${LS_PROJECT_ID}"
+            organization: "${LS_ORG_ID}" 
+            project: "${LS_PROJECT_ID}" 
             api_key: "${LS_API_KEY}"
-            window_size: 5m
+            window_size: 5m 
             stream_id: "${LS_STREAM_ID}"
+        processors:
+          resourcedetection/azure:
+            detectors: [env, azure]
+            timeout: 2s
+            override: false
         exporters:
           otlp:
             endpoint: ingest.lightstep.com:443
@@ -110,9 +115,13 @@ Implement the [Microservice Observability](artemis_microservice_obs_overview.htm
         service:
           pipelines:
             traces:
-              receivers: [otlp,lightstep-streams/mystream]
+              receivers: [otlp]
+              processors: [resourcedetection/azure]
+              exporters: [logging,otlp]
+            traces/sgc:
+              receivers: [lightstep-streams/mystream]
               processors: []
-              exporters: [logging,otlp,service]
+              exporters: [logging,service]
     EOF
     ```
 
