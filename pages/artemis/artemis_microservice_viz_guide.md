@@ -66,7 +66,7 @@ folder: artemis
     | NOW_USERNAME | YOUR SN USER ID | False | True | 
     | NOW_PASSWORD | YOUR SN PASSWORD | True | True |
     | NOW_SERVER | YOUR SERVICENOW URL | False | True |
-    | SERVICE_MAP | `boutique.json` | False | True |
+    | SERVICE_MAP | `boutique` | False | True |
 
 1. Using the `Run` Button, select `Save Pipeline`
 
