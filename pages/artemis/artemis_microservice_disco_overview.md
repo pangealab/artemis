@@ -9,7 +9,7 @@ permalink: artemis_microservice_disco_overview.html
 folder: artemis
 ---
 
-Leverage the Lightstep Service Graph Connector to atomatically detect and map services and relationships from Traces. The Service Graph is an interactive mapping of all technical and business service dependencies. This feature allows users to easily understand how services combine to deliver customer-facing or business capabilities. View the health of the full service topology at a glance. During incident response, understand the full blast radius of an issue, zero in on the probable cause, and facilitate cross-team collaboration. This version also supports the ability to configure the ingestion of Lightstep Alerts through event management and automatically correlates events to hosts or application services.
+Leverage the Lightstep Service Graph Connector to automatically detect and map services and relationships from Traces. The Service Graph is an interactive mapping of all technical and business service dependencies. This feature allows users to easily understand how services combine to deliver customer-facing or business capabilities. View the health of the full service topology at a glance. During incident response, understand the full blast radius of an issue, zero in on the probable cause, and facilitate cross-team collaboration. This version also supports the ability to configure the ingestion of Lightstep Alerts through event management and automatically correlates events to hosts or application services.
 
 ## Dataflow
 
