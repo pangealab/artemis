@@ -78,17 +78,18 @@ entries:
       url: /artemis_microservice_disco_overview.html
     - title: Guide
       output: web
-      url: /artemis_microservice_disco_guide.html        
-  
-  - title: Measure Service Resilience
-    output: web, pdf
-  #   folderitems:
-  #   - title: Overview
-  #     output: web
-  #   - title: Guide
-  #     output: web
+      url: /artemis_microservice_disco_guide.html
 
   - title: Predict & Prevent Incidents
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      output: web
+      url: /artemis_microservice_aiops_overview.html
+  #   - title: Guide
+  #     output: web   
+  
+  - title: Measure Service Resilience
     output: web, pdf
   #   folderitems:
   #   - title: Overview
